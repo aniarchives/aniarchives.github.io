@@ -36,7 +36,26 @@ body {
 
         <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
 
-		
+		<div class="container">
+    <h1>Can I Ask You Out? 👉🏻👈🏻</h1>
+    <button onclick="showCongratulations()">Yes</button>
+  </div>
+
+  <script>
+    function showCongratulations() {
+      window.alert("Yay! Here's a Taylor Swift playlist. Enjoy!");
+      createSpotifyButton();
+    }
+
+    function createSpotifyButton() {
+      var spotifyButton = document.createElement("a");
+      spotifyButton.href = "https://open.spotify.com/playlist/your-playlist-id"; // Replace with your Spotify playlist URL
+      spotifyButton.target = "_blank";
+      spotifyButton.innerText = "Spotify";
+      spotifyButton.classList.add("button");
+      document.body.appendChild(spotifyButton);
+    }
+  </script>
 
             <h1>ARCHIVES</h1>
 
